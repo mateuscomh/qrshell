@@ -40,6 +40,6 @@ Com uma string como argumento: O script gerará um código QR dessa string.
 
 ## Licença
 
-Este é um software livre: você pode redistribuí-lo e/ou modificar sob os termos da (Licença)[LICENSE] Pública Geral GNU (GPL) versão 3, conforme publicado pela Free Software Foundation.
+Este é um software livre: você pode redistribuí-lo e/ou modificar sob os termos da [Licença](LICENSE) Pública Geral GNU (GPL) versão 3, conforme publicado pela Free Software Foundation.
 
 Este programa é distribuído na esperança de que seja útil, mas SEM NENHUMA GARANTIA; sem sequer a garantia implícita de COMERCIALIZAÇÃO ou ADEQUAÇÃO A UM PROPÓSITO ESPECÍFICO. Veja a Licença Pública Geral GNU para mais detalhes.
