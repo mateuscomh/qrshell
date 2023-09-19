@@ -11,16 +11,18 @@ O principal objetivo deste script é fornecer uma ferramenta de linha de comando
 ## Funcionalidades
 
 1. **Decodificação de Códigos QR**: Quando executado sem argumentos, o script solicita ao usuário que selecione uma área na tela. Ele então tenta decodificar qualquer código QR presente nessa área.
-   
-2. **Geração de Códigos QR**: Quando fornecido com uma string como argumento, o script gera e exibe um código QR no terminal.
 
+2. **Geração de Códigos QR a partir de arquivo**: Caso a string fornecida como argumento e este for um arquivo contendo QR Code, o mesmo é impresso no terminal
+   
+3. **Geração de Códigos QR**: Quando fornecido com uma string como argumento, o script gera e exibe um código QR no terminal.
+_Caso tenha o xclip (opcional) as saídas de leituras dos QR Codes serão enviadas para a área de transferência Control+C_
 ## Dependências
 
 O script depende das seguintes ferramentas:
 - `zbarimg` (de zbar-tools): Para decodificar códigos QR de imagens.
 - `qrencode`: Para gerar códigos QR.
 - `scrot`: Para capturar screenshots.
-- (Opcional) `identify` (de ImageMagick): Para identificar as dimensões da imagem.
+- (Opcional) `xclip`: Recebe o resultado da leitura de QR e envia para a área de transferência (Control+C).
 
 ## Uso
 - Para decodificar um código QR de uma área da tela:
