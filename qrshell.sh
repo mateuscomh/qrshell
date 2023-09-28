@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
-#-----------------------------------------------------------------------------|
-# AUTOR             : Matheus Martins <3mhenrique@gmail.com>
-# HOMEPAGE          : https://github.com/mateuscomh/qrbash
-# DATE/VER.         : 16/09/2023 0.7
-# LICENCE           : GPL3
-# SHORT DESC        : Shell Script to generate and read QRCode from terminal
-# DEPS              : zbarimg(zbar-tools), qrencode, scrot, xclip(optional)
-#-----------------------------------------------------------------------------|
+
+#----------------------------------------------------|
+#  Matheus Martins 3mhenrique@gmail.com
+#  https://github.com/mateuscomh/qrshell
+#  16/09/2023 1.0 GPL3 
+#  Generate and read QRcode from terminal
+#  Depends: zbar-tools, qrencode, scrot, xclip(opt)
+#----------------------------------------------------|
+
 USAGE="Generate and read QR Codes from terminal
  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄         ▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄            ▄           
 ▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░░░░░░░░░░░▌▐░▌       ▐░▌▐░░░░░░░░░░░▌▐░▌          ▐░▌          
