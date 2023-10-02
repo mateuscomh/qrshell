@@ -29,7 +29,7 @@ O script depende das seguintes ferramentas:
 Sem argumentos: O script tentará decodificar um código QR de uma área da tela. *
 
 ```bash
-./qrshot.sh
+./qrshell.sh
 ```
 E então selecione o código QR em tela
 
@@ -37,7 +37,7 @@ E então selecione o código QR em tela
 Com uma string como argumento: O script gerará um código QR dessa string.
 
 ```bash
-./qrshot.sh "sua_string_aqui"
+./qrshell.sh "sua_string_aqui"
 ```
 
 ## Licença
