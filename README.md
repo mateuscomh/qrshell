@@ -1,47 +1,47 @@
-# Script de Manipulação de QR Code
+# QR Code Manipulation Script
 
-Este script é uma ferramenta útil para trabalhar com códigos QR diratamente via terminal. Ele tem capacidade tanto para decodificar quanto para gerar códigos QR.
+This script is a useful tool for working with QR codes directly via the terminal. It has the capability to both decode and generate QR codes.
 
-## Objetivo
+## Objective
 
-O principal objetivo deste script é fornecer uma ferramenta de linha de comando simples e eficaz para:
-1. Decodificar códigos QR a partir de uma área selecionada na tela.
-2. Gerar representações visuais de códigos QR a partir de strings fornecidas.
+The main objective of this script is to provide a simple and effective command-line tool for:
+1. Decoding QR codes from a selected area on the screen.
+2. Generating visual representations of QR codes from provided strings.
 
-## Funcionalidades
+## Features
 
-1. **Decodificação de Códigos QR**: Quando executado sem argumentos, o script solicita ao usuário que selecione uma área na tela. Ele então tenta decodificar qualquer código QR presente nessa área.
+1. **QR Code Decoding**: When executed without arguments, the script prompts the user to select an area on the screen. It then attempts to decode any QR code present in that area.
 
-2. **Geração de Códigos QR a partir de arquivo**: Caso a string fornecida como argumento e este for um arquivo contendo QR Code, o mesmo é impresso no terminal
-   
-3. **Geração de Códigos QR**: Quando fornecido com uma string como argumento, o script gera e exibe um código QR no terminal.
-_Caso tenha o xclip (opcional) as saídas de leituras dos QR Codes serão enviadas para a área de transferência Control+C_
-## Dependências
+2. **QR Code Generation from File**: If the string provided as an argument is a file containing a QR code, it is printed to the terminal.
 
-O script depende das seguintes ferramentas:
-- `zbarimg` (de zbar-tools): Para decodificar códigos QR de imagens.
-- `qrencode`: Para gerar códigos QR.
-- `scrot`: Para capturar screenshots.
-- (Opcional) `xclip`: Recebe o resultado da leitura de QR e envia para a área de transferência (Control+C).
+3. **QR Code Generation**: When provided with a string as an argument, the script generates and displays a QR code in the terminal.
+   _If xclip is available (optional), QR code decoding outputs will be sent to the clipboard (Ctrl+C)._
 
-## Uso
-- Para decodificar um código QR de uma área da tela:
-Sem argumentos: O script tentará decodificar um código QR de uma área da tela. *
+## Dependencies
+
+The script depends on the following tools:
+- `zbarimg` (from zbar-tools): To decode QR codes from images.
+- `qrencode`: To generate QR codes.
+- `scrot`: To capture screenshots.
+- (Optional) `xclip`: Receives QR code decoding results and sends them to the clipboard (Ctrl+C).
+
+## Usage
+- To decode a QR code from a screen area:
+Without arguments: The script will attempt to decode a QR code from a screen area. *
 
 ```bash
 ./qrshell.sh
 ```
-E então selecione o código QR em tela
+Then select the QR code on the screen.
 
-- Para gerar um código QR
-Com uma string como argumento: O script gerará um código QR dessa string.
-
+- To generate a QR code
+With a string as an argument: The script will generate a QR code from that string.
 ```bash
-./qrshell.sh "sua_string_aqui"
+./qrshell.sh "your_string_here"
 ```
 
-## Licença
+## License
 
-Este é um software livre: você pode redistribuí-lo e/ou modificar sob os termos da (Licença)[LICENSE] Pública Geral GNU (GPL) versão 3, conforme publicado pela Free Software Foundation.
+This is free software: you can redistribute it and/or modify it under the terms of the [GNU General Public License (GPL)](LICENSE) as published by the Free Software Foundation.
 
-Este programa é distribuído na esperança de que seja útil, mas SEM NENHUMA GARANTIA; sem sequer a garantia implícita de COMERCIALIZAÇÃO ou ADEQUAÇÃO A UM PROPÓSITO ESPECÍFICO. Veja a Licença Pública Geral GNU para mais detalhes.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
