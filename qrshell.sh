@@ -47,12 +47,14 @@ if [ ! "$1" ]; then
   echo "Use mouse select an area on screen to decode QR"
   OUTPUT=$(scrot -s -e 'echo Image size $w x $h ; echo "" ; zbarimg "$f"')
   echo -e "$OUTPUT \n" | tee /dev/tty | sed -n "s/.*QR-Code://p" | xclip -selection clipboard &>/dev/null
+  sleep 1
 elif [ -f "$1" ]; then
   OUTPUT=$(zbarimg "$1")
   echo -e "$OUTPUT \n" | tee /dev/tty | sed -n "s/.*QR-Code://p" | xclip -selection clipboard &>/dev/null
 elif [ "$#" -eq 1 -a ! -f "$1" ]; then
   TMPFILE=$(mktemp "$TMPDIR/screenshot.XXXXXX.txt") 
   qrencode -m 2 -t ANSIUTF8 "$1" | tee "$TMPFILE" 
+  cat "$TMPFILE" | zbarimg --quiet --raw - | qrencode -t ANSIUTF8
 else
   echo "Invalid input"; show_help
   exit 1
